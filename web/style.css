@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fdfdfd;
+}
+.logo{
+    width: 200px;
+    margin-left: 8%;
+    width: 60px;
+    height: auto;
+}
+nav{
+    display: flex;
+    width: 84%;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #ff4b5a;
+}
+.detel{
+    margin: 8% 0 0 8%;
+}
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom:20px ;
+}
+span{
+    color: #ff4b5a;
+}
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+.detel a{
+background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+        }
+.image img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+.image:hover .boy{
+    left: 45%;
+}
+
+.row {
+    display              : grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap             : 20px;
+}
+
+.col-xs-12 {
+    grid-column: span 15
+}
+
+
+.col-xs-7 {
+    grid-column: span 10
+}
+
+
+.col-xs-5 {
+    grid-column: span 5
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    margin-left  : auto;
+    margin-right : auto;
+    padding-left : 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.gambar {
+    padding: 40px 60px;
+}
+
+.calculator {
+    padding-top: 10px;
+    padding-left: 150px;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background-color: #4b0f2d;
+    color:aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+/* Mengatur Timeline bagian Header */
+.timeline-content h1 {
+    font-size: 20px;
+    font-weight: 500;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+/* Mengatur Timeline bagian paragraf */
+.timeline-content p {
+    font-size: 15px;
+    line-height:30px ;
+    font-weight: 300;
+}
+@media only screen and (min-width: 768px) {
+    /* Menambahkan line garis di timeline */
+    .timeline::before {
+        content:'';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color:gray;
+    }
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+    }
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+    }
+    .about {
+        background-color: #ffffff;
+    }
+    #a {
+        text-align: center;
+        padding: 20px 0;
+        color: #A51D61;
+        margin-top: 50px;
+    }
+    #b {
+    color:#A51D61;
+    word-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    }
+}
+
+.container {
+    min-height: 100hv;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: aliceblue;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+} 
+
+.ppanel {
+    padding: 15px 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40;
+
+}
